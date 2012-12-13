@@ -1,5 +1,5 @@
 /**
- * Sina Weibo Lesskiss 
+ * Douban Objects Chrome Extension
  *
  * @author icyleaf <icyleaf.cn@gmail.com>
  */
