@@ -27,10 +27,11 @@ var dbObjects = {
 
 	init: function()
 	{
-		dbObjects.owner = $('.top-nav-info a:nth-child(3)').html().replace('的帐号', '');
+		dbObjects.owner = $('li.nav-user-account a span:first').html().replace('的帐号', '');
 
 		// Debug infos (only in debug mode)
 		dbObjects.is_debug_mode();
+
 		dbObjects.debug('ua: ' + navigator.userAgent);
 		dbObjects.debug('user: ' + dbObjects.owner);
 		dbObjects.debug('ck: ' + dbObjects.get_cookie('ck'));
@@ -215,6 +216,8 @@ var dbObjects = {
 			}
 			$(this).attr('href', href);
 		});
+
+		return enable;
 	},
 
 	debug: function(o)
